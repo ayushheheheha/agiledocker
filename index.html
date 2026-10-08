@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Notice Board</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2b6cb0;
+            --accent: #ed8936;
+            --bg: #f7fafc;
+            --card-bg: #ffffff;
+            --text: #2d3748;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        header h2 {
+            margin: 0.5rem 0 0;
+            font-size: 1.25rem;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .notice-board-title {
+            font-size: 1.8rem;
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .notice-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--secondary);
+            transition: transform 0.2s;
+        }
+        .notice-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .notice-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+        .notice-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin: 0;
+        }
+        .notice-date {
+            font-size: 0.85rem;
+            color: #718096;
+            background: #edf2f7;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+        }
+        .notice-content {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #4a5568;
+        }
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+        footer p {
+            margin: 0.25rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Apex Institute of Technology</h1>
+        <h2>Department of Computer Science & Engineering</h2>
+    </header>
+
+    <div class="container">
+        <div class="notice-board-title">📢 Official Department Notices</div>
+
+        <div class="notice-card">
+            <div class="notice-header">
+                <h3 class="notice-title">Mid-Semester Examination Schedule</h3>
+                <span class="notice-date">October 5, 2026</span>
+            </div>
+            <div class="notice-content">
+                The Mid-Semester examinations for all B.Tech CSE students will commence from November 10, 2026. Detailed timetable has been uploaded to the student portal. Attendance is mandatory.
+            </div>
+        </div>
+
+        <div class="notice-card">
+            <div class="notice-header">
+                <h3 class="notice-title">Annual Tech Fest - "TechnoSpark 2026"</h3>
+                <span class="notice-date">October 2, 2026</span>
+            </div>
+            <div class="notice-content">
+                Registrations are now open for coding, hackathon, and robotics events at TechnoSpark 2026. Interested students can register via the department website on or before October 25, 2026.
+            </div>
+        </div>
+
+        <div class="notice-card">
+            <div class="notice-header">
+                <h3 class="notice-title">Guest Lecture on Cloud & DevOps</h3>
+                <span class="notice-date">September 28, 2026</span>
+            </div>
+            <div class="notice-content">
+                A guest lecture on modern Cloud Architecture and DevOps practices by industry experts will be held in Seminar Hall 2 on Friday at 10:00 AM. All final-year students must attend.
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Contact Information:</strong> Department Office, Academic Block 3, Apex Institute of Technology</p>
+        <p>Email: cse-office@apexinstitute.edu | Phone: +91 (0416) 220-5555</p>
+    </footer>
+
+</body>
+</html>
