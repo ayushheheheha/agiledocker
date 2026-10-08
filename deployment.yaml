@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: noticeboard-web
-        image: YOUR_DOCKERHUB_USERNAME/noticeboard-app:latest
+        image: ayushsksksk/noticeboard-app:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
